@@ -87,9 +87,11 @@ class PersonControllerTest {
                 .andExpect(status().isBadRequest())
                 .andExpect(jsonPath("$.status", is(equalTo(400))))
                 .andExpect(jsonPath("$.title", is(equalTo("One or more invalid fields"))))
-                .andExpect(jsonPath("$.messages", hasSize(1)))
+                .andExpect(jsonPath("$.messages", hasSize(2)))
                 .andExpect(jsonPath("$.messages[0]",
-                        is(equalTo("'identifier' must not be null"))));
+                        is(equalTo("'identifier' must not be null"))))
+                .andExpect(jsonPath("$.messages[1]",
+                        is(equalTo("'identifier' must not be blank"))));
 
         verify(this.personService, times(0)).register(any(Person.class));
     }
