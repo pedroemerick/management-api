@@ -1,9 +1,10 @@
-package com.ek.management.v1.controller;
+package com.ek.management.controller.v1;
 
-import com.ek.management.v1.exception.InvalidIdentifierException;
-import com.ek.management.v1.model.IdentifierType;
-import com.ek.management.v1.model.Person;
-import com.ek.management.v1.service.PersonService;
+import com.ek.management.controller.v1.PersonController;
+import com.ek.management.exception.InvalidIdentifierException;
+import com.ek.management.model.IdentifierType;
+import com.ek.management.model.Person;
+import com.ek.management.service.PersonService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

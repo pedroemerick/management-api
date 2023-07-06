@@ -1,6 +1,8 @@
-package com.ek.management.v1.model;
+package com.ek.management.controller.v1.dto;
 
-import com.ek.management.v1.controller.dto.PersonDTO;
+import com.ek.management.model.IdentifierType;
+import com.ek.management.model.Person;
+import com.ek.management.controller.v1.dto.PersonDTO;
 import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;

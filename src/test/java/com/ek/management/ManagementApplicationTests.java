@@ -1,4 +1,4 @@
-package com.ek.management.v1;
+package com.ek.management;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

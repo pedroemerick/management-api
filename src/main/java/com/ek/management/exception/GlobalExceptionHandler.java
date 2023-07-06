@@ -1,6 +1,6 @@
-package com.ek.management.v1.exception;
+package com.ek.management.exception;
 
-import com.ek.management.v1.controller.dto.ErrorDTO;
+import com.ek.management.controller.v1.dto.ErrorDTO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.support.DefaultMessageSourceResolvable;

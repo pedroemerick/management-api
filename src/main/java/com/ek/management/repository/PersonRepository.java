@@ -1,6 +1,6 @@
-package com.ek.management.v1.repository;
+package com.ek.management.repository;
 
-import com.ek.management.v1.model.Person;
+import com.ek.management.model.Person;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

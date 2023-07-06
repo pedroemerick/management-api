@@ -1,7 +1,8 @@
-package com.ek.management.v1.repository;
+package com.ek.management.repository;
 
-import com.ek.management.v1.model.IdentifierType;
-import com.ek.management.v1.model.Person;
+import com.ek.management.model.IdentifierType;
+import com.ek.management.model.Person;
+import com.ek.management.repository.PersonRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;

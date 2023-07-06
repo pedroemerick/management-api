@@ -1,4 +1,4 @@
-package com.ek.management.v1.controller.dto;
+package com.ek.management.controller.v1.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Builder;

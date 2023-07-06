@@ -1,6 +1,6 @@
-package com.ek.management.v1.controller.dto;
+package com.ek.management.controller.v1.dto;
 
-import com.ek.management.v1.model.Person;
+import com.ek.management.model.Person;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotNull;
 import lombok.Builder;

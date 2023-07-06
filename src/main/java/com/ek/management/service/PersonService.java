@@ -1,9 +1,9 @@
-package com.ek.management.v1.service;
+package com.ek.management.service;
 
-import com.ek.management.v1.exception.InvalidIdentifierException;
-import com.ek.management.v1.model.IdentifierType;
-import com.ek.management.v1.model.Person;
-import com.ek.management.v1.repository.PersonRepository;
+import com.ek.management.exception.InvalidIdentifierException;
+import com.ek.management.model.Person;
+import com.ek.management.model.IdentifierType;
+import com.ek.management.repository.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

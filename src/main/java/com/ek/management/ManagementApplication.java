@@ -1,4 +1,4 @@
-package com.ek.management.v1;
+package com.ek.management;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

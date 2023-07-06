@@ -1,8 +1,7 @@
-package com.ek.management.v1.controller;
+package com.ek.management.controller.v1;
 
-import com.ek.management.v1.controller.dto.ErrorDTO;
-import com.ek.management.v1.controller.dto.PersonDTO;
-import com.ek.management.v1.service.PersonService;
+import com.ek.management.controller.v1.dto.ErrorDTO;
+import com.ek.management.controller.v1.dto.PersonDTO;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -10,22 +9,16 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 @Tag(name = "Persons")
-@RestController
 @RequestMapping("/v1")
-public class PersonController {
-
-    @Autowired
-    private PersonService personService;
+public interface PersonApi {
 
     @Operation(summary = "Register", description = "Register a person")
     @ApiResponses(value = {
@@ -42,9 +35,7 @@ public class PersonController {
             produces = MediaType.APPLICATION_JSON_VALUE,
             consumes = MediaType.APPLICATION_JSON_VALUE
     )
-    public ResponseEntity<PersonDTO> registerPerson(@Valid @RequestBody PersonDTO personDTO) {
-        var person = this.personService.register(personDTO.toDomain());
-
-        return ResponseEntity.status(HttpStatus.CREATED).body(PersonDTO.from(person));
+    default ResponseEntity<PersonDTO> registerPerson(@Valid @RequestBody PersonDTO personDTO) {
+        return new ResponseEntity<>(HttpStatus.NOT_IMPLEMENTED);
     }
 }

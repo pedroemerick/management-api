@@ -1,4 +1,4 @@
-package com.ek.management.v1.config;
+package com.ek.management.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;

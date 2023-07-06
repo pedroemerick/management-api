@@ -1,4 +1,4 @@
-package com.ek.management.v1.model;
+package com.ek.management.model;
 
 public enum IdentifierType {
 

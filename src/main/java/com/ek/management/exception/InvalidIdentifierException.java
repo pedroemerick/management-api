@@ -1,4 +1,4 @@
-package com.ek.management.v1.exception;
+package com.ek.management.exception;
 
 public class InvalidIdentifierException extends RuntimeException {
 

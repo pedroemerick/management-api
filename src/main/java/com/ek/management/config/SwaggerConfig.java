@@ -1,4 +1,4 @@
-package com.ek.management.v1.config;
+package com.ek.management.config;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.SpecVersion;
