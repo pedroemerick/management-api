@@ -2,6 +2,7 @@ package com.ek.management.controller.v1.dto;
 
 import com.ek.management.model.Person;
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.Builder;
 import lombok.Data;
@@ -15,11 +16,13 @@ public class PersonDTO {
     private Long id;
 
     @NotNull(message = "'name' must not be null")
+    @NotBlank(message = "'name' must not be blank")
     @Schema(name = "name", description = "Persons name",
             requiredMode = Schema.RequiredMode.REQUIRED)
     private String name;
 
     @NotNull(message = "'identifier' must not be null")
+    @NotBlank(message = "'identifier' must not be blank")
     @Schema(name = "identifier", description = "Person identifier",
             requiredMode = Schema.RequiredMode.REQUIRED)
     private String identifier;
