@@ -1,6 +1,6 @@
 package com.ek.management.controller.v1.dto;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Builder;
 import lombok.Getter;
 
@@ -11,15 +11,15 @@ import java.util.List;
 @Getter
 public class ErrorDTO {
 
-    @JsonProperty
+    @Schema(name = "status", description = "Http Status Code")
     private Integer status;
 
-    @JsonProperty
+    @Schema(name = "timestamp", description = "Data/hora")
     private OffsetDateTime timestamp;
 
-    @JsonProperty
+    @Schema(name = "title", description = "Issue title")
     private String title;
 
-    @JsonProperty
+    @Schema(name = "messages", description = "Detailed messages about the issue")
     private List<String> messages;
 }
