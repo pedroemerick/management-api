@@ -7,7 +7,7 @@ A aplicação foi construída com:
 - H2 Database
 - Lombok
 
-A aplicação roda na porta 8080. Ao ser executada é disponibilizada uma API REST, onde sua documentação pode ser visualizada em seu Swagger na URL http://{host}:{porta}/swagger-ui/index.html#/.
+A aplicação roda na porta 8080. Ao ser executada é disponibilizada uma API REST, onde sua documentação pode ser visualizada em seu Swagger na URL `http://{host}:{porta}/swagger-ui/index.html#/`.
 
 Por padrão o projeto utiliza um banco de dados relacional em memória para persitir os dados.
 
@@ -20,14 +20,14 @@ Para executar a aplicação é necessário conter:
 
 1. Clone o repositório
 2. Acesse o diretório do projeto clonado
-3. Compile e gere o pacote da aplicação:
+3. Compile e gere o pacote da aplicação
 
 `mvn clean package`
 
-4. Se deseja executar a aplicação através do Java, use:
+4. Para executar a aplicação através do Java em sua máquina
 
 `java -jar target/management-0.0.1-SNAPSHOT.jar`
 
-5. Se desejar executar a aplicação em um container Docker, use:
+5. Para executar a aplicação em um container Docker
 
 `docker-compose up`
